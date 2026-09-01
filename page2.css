@@ -1,0 +1,145 @@
+  .no1-benefits-inner {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #1e293b;
+  }
+  /* Header */
+  .no1-b-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 44px auto;
+  }
+  .no1-b-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #fdf4ff;
+    color: #9424a5;
+    border: 1px solid #f3e8ff;
+    padding: 5px 14px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .no1-b-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
+  }
+  .no1-b-subtitle {
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .no1-b-subtitle strong {
+    color: #9424a5;
+  }
+  /* Grid */
+  .no1-b-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* Card */
+  .no1-b-card {
+    background-color: #ffffff;
+    border: 1px solid #ede9fe;
+    border-radius: 14px;
+    padding: 30px 24px 26px 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-sizing: border-box;
+  }
+  .no1-b-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(148, 36, 165, 0.08);
+    border-color: #d8b4fe;
+  }
+  /* Highlight Card */
+  .no1-b-card-featured {
+    border: 2px solid #9424a5;
+    background: linear-gradient(180deg, #ffffff 0%, #fdf4ff 100%);
+    box-shadow: 0 4px 16px rgba(148, 36, 165, 0.08);
+  }
+  .no1-b-top-badge {
+    position: absolute;
+    top: -11px;
+    right: 20px;
+    background-color: #9424a5;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 3px 10px;
+    border-radius: 9999px;
+  }
+  /* Icon */
+  .no1-b-icon-wrap {
+    width: 48px;
+    height: 48px;
+    background-color: #fdf4ff;
+    border: 1px solid #f3e8ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  /* Typography */
+  .no1-b-card-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 10px 0;
+    line-height: 1.35;
+  }
+  .no1-b-card-text {
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+    flex-grow: 1;
+  }
+  /* Pill Tag */
+  .no1-b-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #334155;
+    align-self: flex-start;
+  }
+  /* Responsive Breakpoints */
+  @media (max-width: 991px) {
+    .no1-b-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }
+  @media (max-width: 767px) {
+    .no1-b-title {
+      font-size: 26px;
+    }
+    .no1-b-subtitle {
+      font-size: 15px;
+    }
+    .no1-b-card {
+      padding: 22px 18px;
+    }
+  }
